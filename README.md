@@ -20,6 +20,9 @@ content/payload : {
                       "end_x" :"124",
                       "end_y" : "197"
                   }
+                  
+                  
+                        
 Response-- {
     "ride_id": "c7a8dffc-c164-11ea-b264-0abcd7a549af",
     "ride_start_time": "2020-07-08T21:57:00.409906Z",
