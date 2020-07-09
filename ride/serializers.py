@@ -2,6 +2,13 @@ from rest_framework import serializers
 
 from ride.models import Ride
 
+class BookSerializer(serializers.Serializer):
+    user_name = serializers.CharField()
+    start_x = serializers.CharField()
+    start_y = serializers.CharField()
+    end_x = serializers.CharField()
+    end_y = serializers.CharField()
+
 
 class RideSerializer(serializers.ModelSerializer):
     class Meta:

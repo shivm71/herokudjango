@@ -1,9 +1,7 @@
 import math
-from logging import log
-
 from rest_framework.views import APIView
 from .models import Car, Ride, User
-from .serializers import RideSerializer
+from .serializers import RideSerializer, BookSerializer
 from rest_framework.response import Response
 
 
@@ -22,7 +20,7 @@ def get_estimated_time(data):
 
 
 class Book(APIView):
-    serializer_class = RideSerializer
+    serializer_class = BookSerializer
 
     def post(self, request):
         data = request.data
